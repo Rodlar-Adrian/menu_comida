@@ -66,15 +66,16 @@ nav ul li a:hover  {
 .pie-pagina{
     width: 100%;
     background-color: #fee9c9;
+    font-family: 'K2D', sans-serif;;
 }
 .pie-pagina .grupo-1{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap:50px;
-    padding: 45px 0px;
+    padding: 35px 0px;
 }
 .pie-pagina .grupo-1 .box figure{
     width: 100%;
@@ -82,6 +83,7 @@ nav ul li a:hover  {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
 }
 .pie-pagina .grupo-1 .box figure img{
     width: 250px;
