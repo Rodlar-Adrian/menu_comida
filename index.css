@@ -155,11 +155,6 @@ text-align: left;
 
 /*:::::bebidas*/
  
-.container-bebidas{
-display: grid;
-width: 100%;
-grid-template-columns: 1fr 1fr;
-}
 
 #obj2 h2{
     color:#FFB13A;
@@ -181,14 +176,4 @@ text-align: left;
     letter-spacing: 0em;
     text-align: left;
 
-    }
-
-    bebidas div img{
-        align-items: center;
-        align-content: center;
-        width: 300px;
-        padding-left: 50%;
-        margin-left: 500px;
-        justify-content: center;
-        align-items: center;
     }
