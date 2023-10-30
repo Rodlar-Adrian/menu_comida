@@ -1,4 +1,5 @@
-let = menu = () => {
+let = alimentos = () => {
+
     document.getElementById('obj1').style.display=''
     document.getElementById('obj2').style.display='none'
     document.getElementById('obj3').style.display='none'
