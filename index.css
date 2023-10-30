@@ -43,7 +43,7 @@ x{
     font-size: 40px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover  {
     background-color: #E27C2F;
     border-radius: 25px;
 }
@@ -127,3 +127,68 @@ nav ul li a:hover{
         padding: 35px 0px;
     }
 }
+
+
+/*:::::Alimebtos */
+
+#obj1 h2{
+    color:#FFB13A;
+    font-family: Lilita One;
+font-size: 100px;
+font-weight: 400;
+line-height: 114px;
+letter-spacing: 0em;
+text-align: left;
+
+    }
+
+    li{
+        color: #000000;
+    font-family: Libre Franklin;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    }
+
+/*:::::bebidas*/
+ 
+.container-bebidas{
+display: grid;
+width: 100%;
+grid-template-columns: 1fr 1fr;
+}
+
+#obj2 h2{
+    color:#FFB13A;
+    font-family: Lilita One;
+font-size: 100px;
+font-weight: 400;
+line-height: 114px;
+letter-spacing: 0em;
+text-align: left;
+
+    }
+
+    li{
+        color: #000000;
+    font-family: Libre Franklin;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    }
+
+    bebidas div img{
+        align-items: center;
+        align-content: center;
+        width: 300px;
+        padding-left: 50%;
+        margin-left: 500px;
+        justify-content: center;
+        align-items: center;
+    }
