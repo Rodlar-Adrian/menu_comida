@@ -1,5 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+/*Nab Bar*/
+
+@font-face {
+    font-family: Lilita-One;
+    src: url(./LilitaOne-Regular.ttf);
+}
+
+nav{
+    background-color:#FFB13A;
+    border-radius: 10px;
+}
+
+nav ul div{
+    padding: 0;
+    margin-left: 45.72px;
+}
+
+
+nav ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    flex: auto;
+}
+
+nav ul li a{
+    padding: 20px;
+    color: #BA311A;
+    text-decoration: none;
+    font-family: Lilita-One;
+    font-size: 30px;
+}
+
+x{
+    font-family: Lilita-One;
+    color: #BA311A;
+    font-size: 40px;
+}
+
+nav ul li a:hover{
+    background-color: #E27C2F;
+    border-radius: 25px;
+}
+
+/* image 2 */
+.cubiertos{
+    left: 2.08%;
+    right: 91.81%;
+    top: 22.48%;
+    bottom: 23.26%;
+}
+
+.logo{/* image 1 */
+    margin: 0% 0% 0% 20%;
+    width: 50%;
+    float: right;
+}
+
 /*:::::Pie de Pagina*/
 .pie-pagina{
     width: 100%;

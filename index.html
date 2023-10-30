@@ -6,9 +6,61 @@
     <link rel="stylesheet" href="index.css">
      <!--Iconos-->
      <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+     <script src="./display.js"></script>
     <title>Menu de comida</title>
 </head>
 <body>
+    <!--naranja de fondo #FFB13A
+    letras rojas #BA311A
+    -->
+    <nav>
+
+        <ul>
+
+            <li><img src="Cubiertos.png" class="cubiertos" ></li>
+
+            <div style="margin-left: 2%; margin-right: 5%;">
+                <li><x>Huaraches</a></li>
+                <li><x>El Palmar</a></li>
+            </div>
+
+
+            <li><a onclick="menu()">Alimentos</a></li>
+            <li><a onclick="bebidas()">Bebidas</a></li>
+            <li><a onclick="contacto()">Contacto</a></li>
+            <li><a onclick="ubicacion()">Ubicacion</a></li> 
+
+            <li1><img href="#" src="Logo.png" class="logo"></li1>
+            
+        </ul>
+
+    </nav>
+
+    <alimentos id="obj1">
+        <p>holi</p>
+    </alimentos>
+
+    <bebidas style="display:none;" id="obj2">
+        <p>Holi x2</p>
+    </bebidas>
+
+    <contacto style="display: none;" id="obj3">
+        <a href="https://wa.me/5542453525" target="_blank">
+        <div style="display: flex;justify-content: center;">
+            <img src="./Whatsapp.png" style="width: 10%;" >
+            <h1>WhatsApp: 5542453525</h1>
+        </div>
+    </a>
+    </contacto>
+
+    <ubicacion style="display: none;" id="obj4">
+        <h1 style="display: flex;justify-content: center;">C. Azahar loc 1, El Palmar, 57310 Nezahualcóyotl, Méx, local 125,126.</h1>
+        <div style="display: flex; justify-content: center;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.7280601082864!2d-99.02179413620269!3d19.41619744368823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd63712270eb%3A0xf5dd27790f8838c8!2sMercado%20El%20Palmar!5e0!3m2!1ses-419!2smx!4v1698632102403!5m2!1ses-419!2smx" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <br>
+    </ubicacion>
+
     <!--::::Pie de Pagina::::::-->
     <footer class="pie-pagina">
         <div class="grupo-1">
