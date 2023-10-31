@@ -139,7 +139,7 @@ grid-template-columns: 1fr 1fr;
 }
 
 
-#obj1 .container-img-comida{
+#obj1 .container-img-comida {
     display: flexbox;
     display: grid;
     grid-row: 1fr 1fr 1fr;
@@ -147,6 +147,12 @@ grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
+#obj1 .container-img-comida img{
+    display: flex;
+    max-width: 100%;
+    width: 400px;
+    object-fit: cover;
+}
 
 #obj1 br{
     padding-top: 30px;
@@ -207,6 +213,13 @@ grid-template-columns: 1fr 1fr;
     padding-top: 30px;
 
 }
+#obj2 .container-img-refresco img {
+    display: flex;
+    max-width: 100%;
+    width: 400px;
+    object-fit: cover;
+}
+
 
 
  
