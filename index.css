@@ -135,8 +135,25 @@ nav ul li a:hover  {
 display: flexbox;
 display: grid;
 grid-template-columns: 1fr 1fr;
+flex-wrap: nowrap;
+}
+#obj1 div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 
 }
+
+#obj1 div h2{
+    display: flexbox;
+}
+#obj1 div h2 p{
+    display: flexbox;
+}
+
+   
+    
+    
 
 
 #obj1 .container-img-comida {
@@ -149,15 +166,12 @@ grid-template-columns: 1fr 1fr;
 
 #obj1 .container-img-comida img{
     display: flex;
-    max-width: 100%;
+    flex-wrap: wr;
     width: 400px;
     object-fit: cover;
 }
 
-#obj1 br{
-    padding-top: 30px;
-    margin-top: 20px;
-}
+
 
 
 
@@ -215,7 +229,6 @@ grid-template-columns: 1fr 1fr;
 }
 #obj2 .container-img-refresco img {
     display: flex;
-    max-width: 100%;
     width: 400px;
     object-fit: cover;
 }
