@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="index.css">
      <!--Iconos-->
      <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/db766a8695.js" crossorigin="anonymous"></script>
      <script src="./display.js"></script>
     <title>Menu de comida</title>
 </head>
@@ -13,28 +14,61 @@
     <!--naranja de fondo #FFB13A
     letras rojas #BA311A
     -->
-    <nav>
+
+    <nav class="navbarr">
+        <a style="max-width: 15%;">
+            <img src="Cubiertos.png" class="cubiertos"">
+        </a>
+
+        <div class="rest">
+            <li class="name"><a style="color: #BA311A;">Huaraches</a></li>
+            <li class="name"><a style="color: #BA311A;">El Palmar</a></li>
+        </div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fa-solid fa-bars" id="mn-icon"></i>
+            <i class="fa-solid fa-x" id="cl-icon"></i>
+        </label>
+        
+        <div class="navbarrr">    
+            <a onclick="alimentos()" class="name">Alimentos</a>
+            <a onclick="bebidas()" class="name">Bebidas</a>
+            <a onclick="contacto()" class="name">Contacto</a>
+            <a onclick="ubicacion()" class="name">Ubicacion</a>
+        </div>
+    </nav>
+
+    <!--<nav class="navbar">
 
         <ul>
 
             <li><img src="Cubiertos.png" class="cubiertos" ></li>
 
             <div style="margin-left: 2%; margin-right: 5%;">
-                <li><x>Huaraches</a></li>
-                <li><x>El Palmar</a></li>
+                <li><x>Huaraches</x></li>
+                <li><x>El Palmar</x></li>
             </div>
 
+            <input type="checkbox" id="check">
+                <label for="check" class="icons">
+                    <i class="fa-solid fa-bars" id="mn-icon"></i>
+                    <i class="fa-solid fa-x" id="cl-icon"></i>
+            </label>
 
-            <li><a onclick="alimentos()">Alimentos</a></li>
-            <li><a onclick="bebidas()">Bebidas</a></li>
-            <li><a onclick="contacto()">Contacto</a></li>
-            <li><a onclick="ubicacion()">Ubicacion</a></li> 
 
+            <div class="navbarrr">
+                <li><a onclick="alimentos()">Alimentos</a></li>
+                <li><a onclick="bebidas()">Bebidas</a></li>
+                <li><a onclick="contacto()">Contacto</a></li>
+                <li><a onclick="ubicacion()">Ubicacion</a></li> 
+            </div>
+            
             <li1><img href="#" src="Logo.png" class="logo"></li1>
             
         </ul>
 
-    </nav>
+    </nav>-->
 
     <alimentos id="obj1">
 
@@ -155,7 +189,7 @@
     <bebidas  style="display:none;" id="obj2">
         
 
-            <div>
+            <div class="container-refresco">
                 <h2>Bebidas</h2>
 
                 <p>
@@ -210,7 +244,7 @@
 
     <contacto style="display: none;" id="obj3">
         <a href="https://wa.me/5542453525" target="_blank">
-        <div style="display: flex;justify-content: center;">
+        <div style="display: flex;justify-content: center;" class="contact">
             <img src="./Whatsapp.png" style="width: 10%;" >
             <h1>WhatsApp: 5542453525</h1>
         </div>
@@ -218,7 +252,7 @@
     </contacto>
 
     <ubicacion style="display: none;" id="obj4">
-        <h1 style="display: flex;justify-content: center;">C. Azahar loc 1, El Palmar, 57310 Nezahualcóyotl, Méx, local 125,126.</h1>
+        <h1 style="display: flex;justify-content: center;" class="map">C. Azahar loc 1, El Palmar, 57310 Nezahualcóyotl, Méx, local 125,126.</h1>
         <div style="display: flex; justify-content: center;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.7280601082864!2d-99.02179413620269!3d19.41619744368823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd63712270eb%3A0xf5dd27790f8838c8!2sMercado%20El%20Palmar!5e0!3m2!1ses-419!2smx!4v1698632102403!5m2!1ses-419!2smx" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>

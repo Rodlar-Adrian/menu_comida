@@ -7,7 +7,7 @@
     src: url(./LilitaOne-Regular.ttf);
 }
 
-nav{
+/*nav{
     background-color:#FFB13A;
     border-radius: 10px;
 }
@@ -35,18 +35,21 @@ nav ul li a{
     text-decoration: none;
     font-family: Lilita-One;
     font-size: 30px;
-}
+}*/
 
-x{
+
+
+.name{
+    list-style: none;
     font-family: Lilita-One;
     color: #BA311A;
-    font-size: 40px;
+    font-size: 40px;   
 }
 
-nav ul li a:hover  {
+/*nav ul li a:hover  {
     background-color: #E27C2F;
     border-radius: 25px;
-}
+}*/
 
 /* image 2 */
 .cubiertos{
@@ -131,6 +134,11 @@ nav ul li a:hover  {
 
 /*:::::Alimentos */
 
+.container-texto{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
 #obj1{
 display: flexbox;
 display: grid;
@@ -202,6 +210,10 @@ flex-wrap: nowrap;
     }
 
 /*:::::bebidas*/
+.container-refresco{
+    margin-left: 2rem;
+}
+
 #obj2{
     display: flexbox;
     display: grid;
@@ -257,3 +269,177 @@ flex-wrap: nowrap;
     
         }
 
+
+/*Navbar responsive*/
+
+.navbarrr{
+    float: right;
+    width: 80rem;
+}
+ 
+.navbarr{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .rest{
+    margin: 0% 25% 0% 0%;
+    width: 50%;
+    float: right;
+}
+  
+  #check{
+    display: none;
+  }
+  
+  .navbarr::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFB13A;
+    border-radius: 25px;
+    backdrop-filter: blur(50px);
+    z-index: -1;
+  }
+  
+  .navbarr a {
+    font-size: 2rem;
+    color: #BA311A  ;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1rem;
+  }
+  
+  .icons {
+    right: 5%;
+    position: absolute;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+  .container-img-refresco{
+    margin-top: 6rem;
+  }
+  
+  .contact{
+    margin-top: 10rem;
+  }
+
+  .map{
+    margin-top: 8rem;
+  }
+
+  /*Break points*/
+  
+  @media (max-width: 992px){
+    .navbarr{
+      padding: 1.3rem 5%;
+    }
+  }
+  
+  @media (max-width: 768px){
+    .icons{
+      display: inline-flex;
+    }
+    
+    .logo{/* image 1 */
+        margin: 0% 25% 0% 0%;
+        width: 50%;
+        float: right;
+    }
+  
+    .icons #cl-icon{
+      display: none;
+    }
+  
+    #check:checked~.icons #mn-icon{
+      display: none;
+    }
+  
+    #check:checked~.icons #cl-icon{
+      display: block;
+    }
+  
+    .navbarrr{
+      position: absolute;
+      top: 11.5rem;
+      left: 0;
+      height: 0;
+      width: 100%;
+      background: #FFB13A;
+      backdrop-filter: blur(50px);
+      box-shadow: 0.5rem 1rem rgb(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: .3s ease;
+      border-radius: 25px;
+    }
+    
+    #check:checked~.navbarrr{
+      height: 16rem;
+    }
+
+    .container-texto{
+        margin-top: 6rem;
+    }
+
+    .container-img-comida{
+        margin-top: 12rem;
+    }
+
+    .container-img-refresco{
+        margin-top: 12rem;
+    }
+
+    .container-refresco{
+        margin-top: 6rem;
+    }
+
+    .rest{
+        margin: 0% 150% 0% 0%;
+        width: 100%;
+        float: right;
+    }
+
+    .navbarr{
+        width: 90%;
+    }
+
+    .navbarr a{
+        display: block;
+        font-size: 2rem;
+        margin: 1.5rem;
+        text-align: center;
+    }
+
+    #obj1 .container-img-comida img{
+        display: flex;
+        flex-wrap: wr;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    #obj2 .container-img-refresco img {
+        display: flex;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    .contact{
+        margin-top: 12rem;
+      }
+    
+    .map{
+        margin-top: 12rem;
+  }
+}
